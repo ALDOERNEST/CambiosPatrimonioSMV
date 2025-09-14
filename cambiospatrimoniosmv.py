@@ -40,7 +40,6 @@ except ValueError as e:
 except Exception as e:
     print(f"An unexpected error occurred: {e}")
 
-display(df)
 
 unique_descripcion_columna_in_sorted = df_saldos_sorted_orden_desc['DescripcionColumna'].unique()
 
