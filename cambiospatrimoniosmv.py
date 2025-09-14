@@ -22,7 +22,10 @@ try:
     if data and 'data' in data and isinstance(data['data'], list): # Check if 'data' key exists and is a list
         df = pd.DataFrame(data['data']) # Access data using the correct key
         print("Data loaded successfully. Here is the head of the DataFrame:")
-        display(df.head())
+        
+        st.write("Data loaded successfully. Here is the head of the DataFrame:")
+        st.dataframe(df.head())
+
         print("\nHere is information about the DataFrame:")
         df.info()
     else:
